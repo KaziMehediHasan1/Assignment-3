@@ -1,11 +1,232 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Font  -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Assignment-3</title>
-</head>
-<body>
-    
-</body>
+
+    <!-- tailwind and daisy ui setup -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+
+    <script
+      src="https://kit.fontawesome.com/14ec4d5bd8.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Style -->
+    <style>
+      .font-manrope {
+        font-family: "Manrope", sans-serif;
+      }
+    </style>
+  </head>
+
+  <body class="font-manrope">
+    <!-- Header Part -->
+
+    <header>
+      <!-- Navbar Section -->
+
+      <section
+        class="sm:flex sm:justify-between sm:px-20 py-10 sm:items-center grid"
+      >
+        <div class="font-extrabold sm:text-3xl text-4xl text-center">
+          <h1>Hockey <span class="text-[#FF4240]">’</span>s</h1>
+        </div>
+
+        <nav class="sm:flex sm:items-center">
+          <div
+            class="sm:space-x-12 sm:mr-52 space-x-4 mt-5 flex justify-center"
+          >
+            <a href="#" class="text-[#FF4240]">Home</a>
+
+            <a href="#" class="text-[#424247] font-normal">About</a>
+
+            <a href="#" class="text-[#424247] font-normal">Pages</a>
+
+            <a href="#" class="text-[#424247] font-normal">Blog</a>
+
+            <a href="#" class="text-[#424247] font-normal">Contact</a>
+          </div>
+
+          <div class="space-x-3 flex justify-center items-center mt-5 mr-4">
+            <i class="fa-solid text-[#89898B] fa-magnifying-glass"></i>
+
+            <button class="bg-[#FF4240] rounded-lg p-3 text-white font-bold">
+              <a href="#">Get Ticket</a>
+            </button>
+          </div>
+        </nav>
+      </section>
+    </header>
+
+    <!-- Main Part -->
+
+    <main>
+      <!-- Carousel -->
+
+      <section class="flex justify-center m-0">
+        <!-- <div class="z-10 bg-black text-white">
+            <h2>Meet all the heroes from the field</h2> 
+            <p>In a thrilling hockey showdown, skill and determination converged as the team executed flawless plays. Their relentless efforts paid off with a resounding victory, showcasing the true spirit of the sport.</p>
+         </div> -->
+
+        <div class="carousel w-96 sm:w-full sm:m-10">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img
+              src="Images/1.png"
+              class="sm:m-auto sm:w-[1170px] sm:h-[550px]"
+            />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide4" class="btn btn-circle">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+
+          <div id="slide2" class="carousel-item relative w-full">
+            <img
+              src="Images/hockey1.jpg"
+              class="rounded-lg m-auto sm:w-[1170px] sm:h-[550px]"
+            />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide3" class="carousel-item relative w-full">
+            <img
+              src="Images/hockey2.jpg"
+              class="rounded-lg m-auto sm:w-[1170px] sm:h-[550px]"
+            />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Professional Hockeys Club -->
+
+      <section>
+        <div class="mt-5 text-center space-y-3 sm:p-10 py-4">
+          <h1 class="text-2xl font-extrabold">Professional Hockeys Club</h1>
+          <p class="text-xs font-medium text-[#131318] px-16">
+            The professional hockey club, with its seasoned roster, exhibited a
+            stellar performance on the ice. <br />
+            Their strategic maneuvers and cohesive teamwork propelled them to a
+            triumphant win.The club's dedication and prowess solidified their
+            status as a force to be reckoned with in the league.
+          </p>
+        </div>
+      </section>
+
+      <!-- Progress Section -->
+
+      <section
+        class="grid sm:flex sm:items-center space-x-28 justify-center  mt-12 ">
+        <!-- Progress bar-1 -->
+        <div class="space-y-3">
+          <div
+            class="radial-progress text-[#FF4240]"
+            style="--value: 87"
+            role="progressbar"
+          >
+            87%
+          </div>
+          <div class="space-y-3">
+            <h3 class="font-semibold text-sm">Prayer Facility</h3>
+            <p class="text-xs">
+              Tranquil prayer space <br />
+              fosters serenity and spiritual <br> connection for all.
+            </p>
+          </div>
+        </div>
+
+        <!-- Progress bar-2 -->
+
+        <div class="space-y-3">
+          <div
+            class="radial-progress text-[#49D293]"
+            style="--value: 95"
+            role="progressbar"
+          >
+            95%
+          </div>
+          <div class="space-y-3">
+            <h3 class="font-semibold">Experienced Coach</h3>
+            <p class="text-xs">
+              Guided by an experienced coach, <br />
+              the team excels with <br> precision and strategy.
+            </p>
+          </div>
+        </div>
+
+        <!-- Progress bar-3 -->
+
+        <div class="space-y-3">
+          <div
+            class="radial-progress text-[#FFB546]"
+            style="--value: 90"
+            role="progressbar"
+          >
+            90%
+          </div>
+          <div class="space-y-3">
+            <h3 class="font-semibold">Senior Player</h3>
+            <p class="text-xs">
+              Seasoned senior player excels, <br />
+              showcasing skill, <br> leadership, and enduring sportsmanship.
+            </p>
+          </div>
+        </div>
+
+        <!-- Progress bar-4 -->
+
+        <div class="space-y-3">
+          <div
+            class="radial-progress text-[#4C8DF1]"
+            style="--value: 80"
+            role="progressbar"
+          >
+            80%
+          </div>
+          <div class="space-y-3">
+            <h3 class="font-semibold">Training Ground</h3>
+            <p class="text-xs">
+              Training ground: where dedication meets <br> sweat forging champions <br>
+              of tomorrow's battles.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Part -->
+
+    <footer></footer>
+  </body>
 </html>
